@@ -1,16 +1,12 @@
 import { Module } from '@nestjs/common';
-import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ConfigModule } from '@nestjs/config';
 import { HotelsModule } from './hotels/hotels.module';
 import config from './config/mongo.keys'
-
+import {MongooseModule} from '@nestjs/mongoose'
 
 @Module({
-  imports: [ConfigModule.forRoot(),
-    MongooseModule.forRoot(config.mongoURi ),
-    HotelsModule],
+  imports: [HotelsModule,MongooseModule.forRoot(config.mongoURi)],
   controllers: [AppController],
   providers: [AppService],
 })

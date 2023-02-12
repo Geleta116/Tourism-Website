@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <!-- <link rel="stylesheet" href="cssFiles/contact.css">
+        <link rel="stylesheet" href="cssFiles/general.css"> -->
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <title>Contact page</title>
+        <link rel="stylesheet" href="fonts/css/all.css">
+        <meta name="description" content="Put your description here.">
+        <link rel="stylesheet" href="fonts/css/all.css">
+
+        <meta name="viewport" content="width=device_width, initial-scale=1" />
+    </head>
+
+    <body class="w-100" >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        
+        
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="nav navbar-nav d-flex justify-content-aroun w-100 row">
+       
+
+            <a class="nav-link col-4 mx-2 " aria-current="page" href="index.html">Home</a>
+            <a class="nav-link text-dark col-1  mx-2  " href="about_page.html" tabindex="-1" aria-disabled="true">About</a>
+            <a class="nav-link  col-1  mx-2 text-primary" href="contact_page.html" tabindex="-1" aria-disabled="true">Contact</a>
+            <a class="nav-link text-dark col-1 mx-2" href="sign-up_page.html">Sign up</a>
+            <a class="nav-link text-dark col-1 mx-2" href="login_page.html">Login</a>
+            <a class="nav-link text-dark col-1 mx-2" id="logout" href="index.html" tabindex="-1" aria-disabled="true">Logout</a>
+            <a class="nav-link text-dark col-1 mx-2" id="manage" href="manage.html" tabindex="-1" aria-disabled="true">Manage</a>
+          </div>
+        </div>
+      </nav>
+         
+       
+
+        <main  class=" mt-5 mb-5">
+            <div class="d-flex flex-wrap">
+                <div class="bg-primary  d-flex flex-column mx-auto justify-content-center align-items-center col-sm-10 col-lg-5 p-5 mb-2" >
+
+                    <p class="fs-1 font-weight-bold ">
+                        Contact us
+                    </p>
+                    <p >
+            
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                             nahomamare52@gmail.com
+                        
+                    </p>
+                    <p class="fs-3">
+                        <i class="fa-solid fa-phone"></i>
+                        0970737569
+                    </p>
+                           
+                      
+
+                    <p class="fs-3"> 
+                        <i class="fa-brands fa-square-facebook btn-primary btn fs-3"></i>
+                        <i class="fa-brands fa-twitter  btn-primary btn fs-3"></i>
+                        <i class="fa-brands fa-telegram  btn-primary btn fs-3"></i>
+                    </p>
+                        
+                       
+                        
+                        
+                        
+                </div>
+                
+                <div class="bg-dark col-sm-10 col-lg-5 mx-auto">
+                    <p class="text-light fs-1 mx-auto text-center font-weight-bold mb-5">contact Info</p>
+                    <div style=" display: none;" class="mt-3 border border-danger w-50 text-center mb-3 mx-auto text-light" id="error"></div>
+                    <form class="bg-dark text-light  h-75 d-flex flex-column align-items-center justify-content-center fs-4">
+                      <div style="height:25px; display: none; " class="mt-5 border border-danger  text-center" id="error"></div>
+                        <div class="form-group w-75">
+                            <label class="fs-5" for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" aria-describedby="firstName"  placeholder="Enter First Name">
+                           
+                          </div>
+                          <div class="form-group w-75">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" aria-describedby="lastName" placeholder="Enter Last Name">
+                           
+                          </div>
+    
+                        <div class="form-group w-75">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group w-75">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                       
+                        <div class="form-group w-75">
+                            <label for="phone">phone</label>
+                            <input type="text" class="form-control" id="phone" aria-describedby="phone" placeholder="Enter phone number">
+                           
+                          </div>
+    
+    
+                        <div class="form-group w-75 p-3">
+
+                            <label for="text-area">Remark</label>
+                            <textarea placeholder="Enter text" class="form-control " aria-describedby="text-area" name="text-area"></textarea>
+
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-primary fs-4">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+          <div style="height: 200px;" class="w-100 row justify-content-center align-items-center bg-dark mx-0">
+          <div class="col-lg-3 mx-auto  col-xs-5 d-flex justify-content-center">
+              <i class="fa-sharp fa-solid fa-phone text-primary fs-4 btn btn-dark"></i> <p class="text-light ">+251970737569</p>
+          </div>
+         <div class="col-lg-5 d-flex align-items-center justify-content-center  col-xs-8">
+          <p class="text-light h6 text-center">
+              Your Safety and Comfort IS Our Only Concern
+          </p>
+         </div>
+        
+         <div class="col-lg-3 d-flex justify-content-center   col-xs-5">
+          
+      
+          <a class="" href="#" tabindex="0" aria-label="our social media links"><i class="fa-brands fa-square-facebook text-primary fs-4 btn btn-dark"></i></a>
+          <a class="" href="#"  tabindex="0" aria-label="our social media links"><i class="fa-brands fa-twitter text-primary fs-4 btn btn-dark"></i></a>
+          <a class="" href="#" tabindex="0" aria-label="our social media links"><i class="fa-brands fa-telegram text-primary fs-4 btn btn-dark"></i></a>
+      </div>
+      </div>
+          
+
+      </footer>
+      <script src="./javascript/render/javaScript.js"></script>
+      <script src="./javascript/user-feature/manage.js"></script>
+      <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+      <script src="./javascript/render/contact.js"></script>
+
+    </body>
+</html>
