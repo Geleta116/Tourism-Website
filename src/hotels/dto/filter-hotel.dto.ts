@@ -1,4 +1,4 @@
-import { IsIn, IsOptional } from "class-validator";
+import { IsIn, IsNotEmpty, IsOptional } from "class-validator";
 import { tourismSite } from "../tourism-site.enum";
 
 export class getHotelFilterDto{
