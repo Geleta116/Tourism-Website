@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Manage Hotel</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        
+        
+        
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="nav navbar-nav d-flex justify-content-aroun w-100 row">
+   
+
+        <a class="nav-link col-4 mx-2" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link text-dark col-1  mx-2 " href="about_page.html" tabindex="-1" aria-disabled="true">About</a>
+        <a class="nav-link text-dark col-1  mx-2" href="contact_page.html" tabindex="-1" aria-disabled="true">Contact</a>
+        <a class="nav-link text-dark col-1 mx-2" href="sign-up_page.html">Sign up</a>
+        <a class="nav-link text-dark col-1 mx-2" href="login_page.html">Login</a>
+        <a class="nav-link text-dark col-1 mx-2" id="logout" href="index.html" tabindex="-1" aria-disabled="true">Logout</a>
+        <a class="nav-link text-dark col-1 mx-2 text-primary" id="manage" href="manage.html" tabindex="-1" aria-disabled="true">Manage</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+    <div class="container">
+        <table class="table d-block">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+                
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="body">
+              <!-- <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr> -->
+            </tbody>
+          </table>
+
+    </div>
+
+    
+   
+
+
+    
+</body>
+
+<script src="javascript/user-feature/manage.js">
+    
+ 
+  //   async function display(){
+  //     let html=``
+  //     const inMemoryToken = JSON.parse(localStorage.getItem('user'))
+  //      await  fetch( "http://localhost:3000/users/", {
+  //           method: 'GET',
+  //           headers: {
+  //               'Accept': 'application/json, text/plain, */*',
+  //               'Content-Type': 'application/json',
+  //               'Authorization': `Bearer ${inMemoryToken.access_token}`,
+  //           },
+  //       } )
+  //       .then(res=>res.json())
+  //       .then(data=>{
+  //           data.forEach(element => {
+  //               html+=`
+                
+  //           <tr >
+              
+  //               <td scope="row" id="${element.email}"><button class="delete-btn">delete</button></td>
+  //               <td><form id="form${element.email}"><input type="text" name='name' disabled value="${element.firstname}"></form></td>
+  //               <td><input form="form${element.email}" type="text" name='price' disabled value="${element.lastname}"></td>
+  //               <td><input form="form${element.email}" type="text" name="location" disabled value="${element.email}"></td>
+  //               <td><input form="form${element.email}" type="text" name="tourismSite" disabled value="${element.password}"></td>
+  //               <td><input form="form${element.email}" type="text" name="tourismSite" disabled value="${element.role}"></td>
+               
+              
+  //           </tr>
+  //           `
+           
+                
+  //           });
+            
+  //       })
+  //       let body=document.getElementById('body')
+  //       body.innerHTML=html
+        
+  //       let del = body.querySelectorAll('.delete-btn')
+  //       let update = body.querySelectorAll('.update-btn')
+        
+        
+  //     if (del){
+  //       del.forEach(btn=>{
+  //       btn.addEventListener('click',deleteRow)
+         
+  //       } )
+  //     }
+  //     if (update){
+  //       update.forEach(btn=>{
+  //       btn.addEventListener('click',updateRow)
+         
+  //       } )
+  //     }
+    
+      
+
+        
+
+
+  //  }
+  //   display()
+  //  function updateRow(){
+      
+  //     let tableData=this.parentElement.parentElement.querySelectorAll('input')
+  //     tableData.forEach(element=>{
+  //       element.disabled=false
+  //     })
+      
+      
+
+
+      
+      
+  //     this.parentElement.innerHTML=`<button class="save-btn">save</button>`
+  //     let save = body.querySelectorAll('.save-btn')
+  //     if (save){
+  //       save.forEach(btn=>{
+      
+  //       btn.addEventListener('click',saveRow)
+         
+  //       } )
+  //     }
+      
+  //   }
+  //   async function saveRow(){
+  //     const form=this.parentElement.parentElement.querySelector('form')
+      
+  //     const id =this.parentElement.parentElement.childNodes[1].id
+    
+  //     const formData= new FormData(form)
+  //     console.log(formData)
+  //     for (let [key,val] of formData){
+  //       console.log(key,val)
+  //     }
+  //     await fetch(`http://localhost:3000/hotels/${id}`,{
+  //       method:'PATCH',
+  //       body:formData.json(),
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       }
+
+  //     })
+  //     .then(res=>res.json())
+  //     .then(data=>console.log(data))
+  //     .catch(err=>console.log(err))
+      
+     
+  //     // await fetch("http://localhost:3000/hotels",{
+  //     //       method:'POST',
+  //     //       body: formData
+
+  //     //   })
+  //     //   .then(res=> res.json())
+  //     //   .then(data=>console.log(data))
+  //     //   .catch(err=>console.log(err))
+        
+    
+      
+
+  //   }
+  //   async function deleteRow(){
+  //     const id =this.parentElement.id
+  //     await fetch(`http://localhost:3000/users/${id}`,{method:'DELETE'})
+  //     .then(res=>res.json())
+  //     .then(data=>console.log(data))
+  //     display()
+
+  //   }
+
+
+
+</script>
+</html>

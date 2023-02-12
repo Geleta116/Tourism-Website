@@ -1,0 +1,165 @@
+
+
+
+.main{
+    background-image: url(../images/main6.jpg);
+    background-size: cover;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:black;
+    
+
+
+   
+    
+    
+}
+
+
+.main__name,.child__our-team,.child__about{
+   
+    font-size: 8rem;
+    
+    background-size: cover;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    margin:0 auto;
+    padding: 5px 15px;
+}
+.main__name{
+    margin-top: 150px;
+    color:black;
+    text-shadow: 0 0 0 rgba(0,0,0,0.5);
+}
+.child__our-team,.child__about{
+    font-size:50px;
+    background-image: none;
+    
+}
+.container{
+    height: 2000px;
+    padding-top: 100px;
+
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.child{
+    width:40%;
+
+    height: 60%;
+    color:rgb(29, 17, 17);
+    font-size:18px;
+}
+
+.team, .members, .child--company, .container{
+    display: flex;
+    gap: 20px;
+
+
+}
+.child--company{
+    
+    background-image: url("../images/new_back5.jpg");
+    background-size: cover;
+    padding-bottom: 20px;
+  
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+
+}
+.child--team{
+    background-image: url("../images/cream.png");
+    background-size: cover;
+
+}
+
+.child__our-team{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:50px;
+
+}
+.img {
+    display: block;
+    max-width:200px;
+    max-height:170px;
+    width: auto;
+    height: auto;
+    
+  }
+
+.team{
+  
+    flex-direction: column;
+  
+    padding-bottom: 20px;
+   
+}
+.members{
+
+
+    margin-left: 10px;
+    margin-bottom:20px ;
+    
+}
+
+@media screen and (max-width:800px){
+    .container{
+        display: block;
+        position: relative;
+    }
+
+    .main__name{
+        font-size:25px;
+    }
+    .child__our-team,.child__about{
+        font-size:20px;
+        background-image: none;
+        
+    }
+
+    .child__par{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .child{
+        width:80%;
+    
+        height: 40%;
+        color:rgb(29, 17, 17);
+        font-size:18px;
+        margin:auto;
+        margin-bottom: 20px;
+    }
+
+    .img {
+        display: block;
+        max-width:100px;
+        max-height:170px;
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+        
+      }
+
+      .child--team{
+        padding-top: 100px;
+      }
+
+      .main__name{
+        margin-top:40px;
+      }
+
+
+
+
+}
+
+
