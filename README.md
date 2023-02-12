@@ -16,15 +16,14 @@ The Title of our project is a Ethio-Tourism which is a website designed by Nahom
 
 
 ****************************************************************************************************************************************
-*                                                                                                                                       *
-*                                                Default Admin Email:- admin@email.com                                                  *
-*                                                                                                                                       *
-*     Please use the above email to create an admin on the signup page as all users who don't create their account with the above email *
-*     will be authomatically Authorized as Users and not admins by the backend.                                                         *
-*     A user who signsup with the above email will automatically be given the role of an admin by the backend.                          *
-*                                                                                                                                       *
-*                                                                                                                                       *
-*     The authorization given to an Admin gives access for the admin to a page where the admin uses to manage the users and the Hotels. *
+                                                                                                                                      
+                                                Default Admin Email:- admin@email.com                                                                                                                                                                                      
+     Please use the above email to create an admin on the signup page as all users who don't create their account with the above email 
+     will be authomatically Authorized as Users and not admins by the backend.                                                         
+     A user who signsup with the above email will automatically be given the role of an admin by the backend.                         
+                                                                                                                                       
+                                                                                                                                       *
+     The authorization given to an Admin gives access for the admin to a page where the admin uses to manage the users and the Hotels. *
 *                           
 *                                         WHAT ADMIN CAN DO USING THE MANAGE USER PAGE                                                  *
 *                                                                                                                                       *
