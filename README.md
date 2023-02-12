@@ -1,73 +1,94 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+#ETHIO-TOURISM
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# Tourism-Website
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+The Title of our project is a Ethio-Tourism which is a website designed by Nahom Amare.
 
-## Description
+                        **       GROUP MEMBERS     **
+                        
+      NAMES                                                ID                     Section
+1   Geleta Daba                                        UGR/1120/13                   1
+2   Sahib Semahegn                                     UGR/2914/13                   1
+3   Nahom Amare                                        UGR/7099/13                   1
+4   Tofik Abdu                                         UGR/1721/13                   1
+5   Kena Tekaling                                      UGR/6147/13                   1
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
 
-```bash
-$ npm install
-```
+****************************************************************************************************************************************
+                                                                                                                                      
+                                                Default Admin Email:- admin@email.com                                                                                                                                                                                      
+     Please use the above email to create an admin on the signup page as all users who don't create their account with the above email 
+     will be authomatically Authorized as Users and not admins by the backend.                                                         
+     A user who signsup with the above email will automatically be given the role of an admin by the backend.                         
+                                                                                                                                       
+                                                                                                                                       
+     The authorization given to an Admin gives access for the admin to a page where the admin uses to manage the users and the Hotels. 
+                           
+                                          WHAT ADMIN CAN DO USING THE MANAGE USER PAGE                                                  
+                                                                                                                                       
+    1. READ all user                                                                                                                   
+    2. Delete user                                                                                                                     
 
-## Running the app
+                                         WHAT ADMIN CAN DO USING THE MANAGE HOTEL PAGE                                                  
+                                                                                                                                       
+    1. READ all Hotels                                                                                                                 
+    2. Delete Hotels                                                                                                                   
+    3. Add Hotels to be rendered on lalibela, axum and harer pages                                                                     
+    4. Update the firls of the Hotels                                                                                                  
 
-```bash
-# development
-$ npm run start
+***************************************************************************************************************************************
 
-# watch mode
-$ npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
 
-## Test
+*********************************************************************************************************************************************
+                                                                                                                                           
+                                               AUTHENTICATION AND AUTHORIZATION                                                            
+                                                                                                                                           
+     A user who hasn't logged doesn't have access to the LALIBELA, AXUM, and HARER pages and when a user who hasn't logged int tries       
+     to access these pages they will be redirected the LOGIN page to login inorder to access these  resources                              
+     
+     THE LOGOUT button only appears for logged in users                                                                                    
+     The MANAGE link which leads to the admin pages for managing users and admins only appear after the user has logged in and the user      
+     has been identified as an Admin     
+                                                                                                                                           
+     A USER can UPDATE their PASSWORD by going to the login page and then touching the change password button which redirects the user to  
+     a new page where the user can enter thei email and password and after being authenticated as an existing user the password will be    
+     updated                                                                                                                               
+                                                                                                                                           
+*********************************************************************************************************************************************
 
-```bash
-# unit tests
-$ npm run test
 
-# e2e tests
-$ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
-```
+***********************************************************************************************************************************************
+                                                                                                                                              
+                                                   DATABASE JUSTIFICATION                                                                     
+                                                                                                                                              
+     We agreed on using a documentation database:- MONGO DB                                                                                   
+     The reason is after looking at both the databases we have come to realize that mongo db offers a much better query string  usage than    
+      the relational database and it also gives us the flexibility and robustness of using the mongoose module which offers                    
+     capability of using the database on different languages such as python too. The other reason we considered while choosing MongoDB as our 
+     database is that  Mongo Db offers more felxibility for further unstractured data while still being robust to handle a structured data.   
+     MONGO DB is also much faster than some of the relational databases such as SQL .                                                         
+************************************************************************************************************************************************
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+***********************************************************************************************************************************************
+                                                                                                                                              
+                                                   OVERVIEW OF CRUD CAPABILITIES                                                             
+                                                                                                                                              
+                                                          FEATURE 1:- USER                                                                    
+       CREATE:-The user can signup which CREATEs a user in the database                                                                       
+       READ:- The Admin can READ all the users of the system                                                                                  
+       UPDATE:- The user can UPDATE their Password                                                                                            
+       DELETE:- The Admin can DELETE the users           
 
-## License
+                                                          FEATURE 2:- HOTELS                                                                   
+       CREATE:- Hotels can be CREATED.                                                                                                       
+       READ:- Details of Hotels can be READ.                                                                                                  
+       UPDATE:- Fields that define the hotels and theirl locations along with their price can be updated                                                              
+       DELETE:- Hotels can be DELETED                                                                                                         
 
-Nest is [MIT licensed](LICENSE).
+*********************************************************************************************************************************************
